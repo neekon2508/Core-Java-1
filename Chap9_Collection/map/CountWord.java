@@ -21,7 +21,7 @@ public static void main(String[] args) throws IOException {
         while(in.hasNext())
         {
             String word = in.next();
-            var s = new String[] {".",","};
+            var s = new String[] {".",",",";",":"};
             for(var w : s)
                 while(word.contains(w))
                 word = word.replace(w,"");
