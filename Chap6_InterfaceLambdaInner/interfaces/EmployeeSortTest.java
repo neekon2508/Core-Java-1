@@ -16,5 +16,10 @@ public class EmployeeSortTest {
         Arrays.sort(staff);
         for (var e : staff)
           System.out.println("name="+e.getName()+",salary="+e.getSalary());
+        Arrays.sort(staff, Comparator.comparing(Employee::getSalary, Comparator.nullsFirst(Comparator.naturalOrder())));
+        for (var e : staff)
+          System.out.println("name="+e.getName()+",salary="+e.getSalary());
+
+
     }
 }

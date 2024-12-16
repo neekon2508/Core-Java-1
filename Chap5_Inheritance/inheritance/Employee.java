@@ -17,6 +17,9 @@ public class Employee {
     public String getName() {
         return name;
     }
+    public Employee(String name) {
+        this.name = name;
+    }
     public double getSalary() {
         return salary;
     }

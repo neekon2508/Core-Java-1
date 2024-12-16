@@ -26,8 +26,5 @@ public class EqualsTest {
         System.out.println("bob.hashCode():"+bob.hashCode());
         System.out.println("carl.hashCode():"+carl.hashCode());
 
-
-
-
     }
 }
